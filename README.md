@@ -13,3 +13,4 @@ Todo:
 
 * GitHub statistics/notifications
 * Quora statistics/notifications
+* Installation instructions
