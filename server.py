@@ -3,9 +3,16 @@ from flask import Flask, request
 import json
 import urllib2
 from werkzeug.contrib.cache import SimpleCache
+import os
+
+try:
+    from configuration import *
+except:
+    JIRA_BASE_URL = os.environ['JIRA_BASE_URL']
+    JIRA_USERNAME = os.environ['JIRA_USERNAME']
+    JIRA_PASSWORD = os.environ['JIRA_PASSWORD']
 
 from jira.client import JIRA
-from configuration import *
 
 app = Flask(__name__)
 cache = SimpleCache()
