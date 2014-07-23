@@ -2,11 +2,9 @@ Flask==0.10.1
 Jinja2==2.7.3
 MarkupSafe==0.23
 Werkzeug==0.9.6
-gunicorn==19.0.0
 itsdangerous==0.24
-jira==0.25
+jira==0.29
 oauthlib==0.6.3
-pymongo==2.7.1
 requests==2.3.0
 requests-oauthlib==0.4.1
 six==1.7.3
