@@ -1,7 +1,7 @@
 dash
 ====
 
-![](http://i.imgur.com/qaZrZl1.png)
+![](http://i.imgur.com/00sFrfA.png)
 
 My personal dashboard. Built with Flask, JavaScript, and APIs. Uses Freeboard for the UI/Dashboard.
 
