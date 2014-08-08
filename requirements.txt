@@ -4,7 +4,6 @@ MarkupSafe==0.23
 Werkzeug==0.9.6
 gunicorn==19.1.0
 itsdangerous==0.24
-jira==0.31
 oauthlib==0.6.3
 requests==2.3.0
 requests-oauthlib==0.4.1

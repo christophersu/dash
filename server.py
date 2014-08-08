@@ -13,8 +13,6 @@ except:
     JIRA_PASSWORD = os.environ['JIRA_PASSWORD']
     API_SECRET = os.environ['API_SECRET']
 
-from jira.client import JIRA
-
 app = Flask(__name__)
 cache = SimpleCache()
 
