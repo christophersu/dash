@@ -62,7 +62,7 @@ def jira_tomorrow():
         return 'Incorrect API secret.'
 
 @app.route('/request/get', methods=['GET'])
-def jira_tomorrow():
+def get_request():
     if check_api_secret(request.args.get('secret')):
         rv = urllib2.urlopen(request.args.get('url')).read()
         return rv
