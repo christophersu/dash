@@ -13,11 +13,6 @@ except:
     JIRA_PASSWORD = os.environ['JIRA_PASSWORD']
     API_SECRET = os.environ['API_SECRET']
 
-JIRA_BASE_URL = ''
-JIRA_USERNAME = ''
-JIRA_PASSWORD = ''
-API_SECRET = ''
-
 from jira.client import JIRA
 
 app = Flask(__name__)
