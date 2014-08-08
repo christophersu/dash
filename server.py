@@ -63,6 +63,14 @@ def jira_tomorrow():
     else:
         return 'Incorrect API secret.'
 
+@app.route('/request/get', methods=['GET'])
+def jira_tomorrow():
+    if check_api_secret(request.args.get('secret')):
+        rv = urllib2.urlopen(request.args.get('url')).read()
+        return rv
+    else:
+        return 'Incorrect API secret.'
+
 ####################################################################
 # Start Flask
 ####################################################################
