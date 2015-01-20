@@ -13,8 +13,6 @@ except:
     JIRA_PASSWORD = os.environ['JIRA_PASSWORD']
     API_SECRET = os.environ['API_SECRET']
 
-from jira.client import JIRA
-
 app = Flask(__name__)
 cache = SimpleCache()
 
@@ -60,6 +58,14 @@ def jira_tomorrow():
             return rv
         else:
             return rv
+    else:
+        return 'Incorrect API secret.'
+
+@app.route('/request/get', methods=['GET'])
+def get_request():
+    if check_api_secret(request.args.get('secret')):
+        rv = urllib2.urlopen(request.args.get('url')).read()
+        return rv
     else:
         return 'Incorrect API secret.'
 

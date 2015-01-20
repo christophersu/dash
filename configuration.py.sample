@@ -1,3 +1,4 @@
 JIRA_BASE_URL = '' # WITHOUT the trailing /
 JIRA_USERNAME = ''
 JIRA_PASSWORD = ''
+API_SECRET = ''
